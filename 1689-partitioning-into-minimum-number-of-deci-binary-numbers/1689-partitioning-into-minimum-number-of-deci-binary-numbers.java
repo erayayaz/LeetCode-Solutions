@@ -5,8 +5,8 @@ class Solution {
         int max = 0;
         for (int i = 0; i < n.length(); i++) {
             if (Character.isDigit(n.charAt(i))) {
-               if ((n.charAt(i) - '0') > max) {
-                   max = n.charAt(i) - '0';
+               if (Character.getNumericValue(n.charAt(i)) > max) {
+                   max = Character.getNumericValue(n.charAt(i));
                }
             }
         }
